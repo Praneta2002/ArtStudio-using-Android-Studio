@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color> <!-- Primary color -->
+    <color name="colorPrimaryDark">#303F9F</color> <!-- Darker shade of primary color -->
+    <color name="colorAccent">#FF4081</color> <!-- Accent color for highlights or buttons -->
+    <color name="background_color">#F5F5F5</color> <!-- Light gray background -->
+</resources>

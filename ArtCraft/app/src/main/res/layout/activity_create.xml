@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity">
+
+    <!-- Toolbar at the top -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Create Artwork"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Title Input -->
+    <EditText
+        android:id="@+id/artTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginEnd="41dp"
+        android:hint="Enter Art Title"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <!-- Radio buttons for Brush, Pencil, and Eraser -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artTitle">
+
+        <RadioButton
+            android:id="@+id/radioBrush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brush" />
+
+        <RadioButton
+            android:id="@+id/radioPencil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pencil" />
+
+        <RadioButton
+            android:id="@+id/radioEraser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eraser" />
+    </RadioGroup>
+
+    <!-- SeekBar for brush size -->
+
+    <!-- Manual size input for brush/pencil size -->
+
+    <!-- Manual pencil size input -->
+
+    <!-- Button to apply brush size -->
+
+    <!-- Button to apply pencil size -->
+
+    <!-- Custom DrawingView for drawing area -->
+
+    <!-- Buttons for Save and Clear -->
+
+    <SeekBar
+        android:id="@+id/brushSizeSeekBar"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <com.example.artcraft.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="370dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="31dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnClear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/brushSizeSeekBar"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="85dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/drawingView">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:text="Save"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnClear"
+        app:layout_constraintStart_toStartOf="@+id/drawingView" />
+
+    <Button
+        android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="151dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSave" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

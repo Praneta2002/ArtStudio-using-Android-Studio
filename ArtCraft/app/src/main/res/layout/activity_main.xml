@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background_color"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar -->
+<androidx.appcompat.widget.Toolbar
+android:id="@+id/toolbar"
+android:layout_width="match_parent"
+android:layout_height="?attr/actionBarSize"
+android:background="@color/colorPrimary"
+android:theme="@style/ToolbarStyle"
+android:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+    <!-- Title -->
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Welcome to ArtStudio!"
+android:textSize="24sp"
+android:textStyle="bold"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="24dp"
+android:textColor="@android:color/black"
+    android:drawableLeft="@drawable/ic_as"
+    android:drawablePadding="0dp" />
+
+    <!-- Explore Art Button -->
+    y<Button
+        android:id="@+id/btnExplore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_explore"
+        android:drawablePadding="0dp"
+        android:padding="16dp"
+        android:text="Explore Art"
+        android:textColor="@android:color/white" />
+
+    <!-- Create Art Button -->
+<Button
+android:id="@+id/btnCreate"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Create Art"
+android:backgroundTint="@color/colorAccent"
+android:textColor="@android:color/white"
+android:layout_marginBottom="16dp"
+android:padding="16dp"
+android:drawableLeft="@drawable/ic_create"
+    android:drawablePadding="0dp" />
+
+    <!-- Gallery Button -->
+<Button
+android:id="@+id/btnGallery"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Gallery"
+android:backgroundTint="@color/colorAccent"
+android:textColor="@android:color/white"
+android:layout_marginBottom="16dp"
+android:padding="16dp"
+android:drawableLeft="@drawable/ic_gallery"
+    android:drawablePadding="0dp" />
+
+    <!-- Profile Button -->
+<Button
+android:id="@+id/btnProfile"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Profile"
+android:backgroundTint="@color/colorAccent"
+android:textColor="@android:color/white"
+android:layout_marginBottom="16dp"
+android:padding="16dp"
+android:drawableLeft="@drawable/ic_profile"
+    android:drawablePadding="0dp" />
+
+    </LinearLayout>
